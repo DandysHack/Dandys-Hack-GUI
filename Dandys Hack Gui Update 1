@@ -27,7 +27,7 @@ PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
 local Section = Tab:AddSection({
-	Name = "Client-Side Script"
+	Name = "No Script ( Client-Side )"
 })
 
 --[[
@@ -171,7 +171,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "No Scarf ( Flutter )",
+	Name = "No Body Accessory ( Flutter )",
 	Callback = function()
       		workspace.Players.test.Body["Meshes/Flutter_005"].Transparency=1
   	end    
@@ -431,6 +431,14 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+local Section = Tab:AddSection({
+	Name = "Change Script ( Client-Side )"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
 local Tab = Window:MakeTab({
 	Name = "Twisteds Script",
 	Icon = "rbxassetid://4483345998",
@@ -444,7 +452,7 @@ PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
 local Section = Tab:AddSection({
-	Name = "Client-Side Script"
+	Name = "No Script ( Client-Side )"
 })
 
 --[[
@@ -478,13 +486,13 @@ Callback = <function> - The function of the button.
 ]]
 
 local Tab = Window:MakeTab({
-	Name = "Fake Trinkets Script",
+	Name = "Fake Trinkets",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
 local Section = Tab:AddSection({
-	Name = "Trinket Slot 1"
+	Name = "Trinket Slot 1 ( Client-Side )"
 })
 
 --[[
@@ -525,7 +533,7 @@ Callback = <function> - The function of the button.
 ]]
 
 local Section = Tab:AddSection({
-	Name = "Trinket Slot 2"
+	Name = "Trinket Slot 2 ( Client-Side )"
 })
 
 --[[
