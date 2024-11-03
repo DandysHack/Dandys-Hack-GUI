@@ -439,6 +439,18 @@ local Section = Tab:AddSection({
 Name = <string> - The name of the section.
 ]]
 
+Tab:AddButton({
+	Name = "Change Rodger Eye ( Dandy Plush )",
+	Callback = function()
+      		workspace.Players.test.Head.Glass.Front.Texture = "rbxassetid://17653810491"
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
 local Tab = Window:MakeTab({
 	Name = "Twisteds Script",
 	Icon = "rbxassetid://4483345998",
@@ -492,7 +504,7 @@ local Tab = Window:MakeTab({
 })
 
 local Section = Tab:AddSection({
-	Name = "Trinket Slot 1 ( Client-Side )"
+	Name = "Change Trinket Slot 1 ( Client-Side )"
 })
 
 --[[
@@ -533,7 +545,7 @@ Callback = <function> - The function of the button.
 ]]
 
 local Section = Tab:AddSection({
-	Name = "Trinket Slot 2 ( Client-Side )"
+	Name = "Change Trinket Slot 2 ( Client-Side )"
 })
 
 --[[
