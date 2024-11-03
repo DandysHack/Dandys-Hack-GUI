@@ -1,0 +1,560 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Dandys Hack Gui", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+--[[
+Name = <string> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <bool> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <string> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "Toons Script",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Client-Side Script"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+OrionLib:MakeNotification({
+	Name = "Welcome",
+	Content = "Notification content... what will it say??",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+--[[
+Title = <string> - The title of the notification.
+Content = <string> - The content of the notification.
+Image = <string> - The icon of the notification.
+Time = <number> - The duration of the notfication.
+]]
+
+Tab:AddButton({
+	Name = "Bald Dandy",
+	Callback = function()
+      		workspace.Players.test.Hair.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Hair( Boxten / Dandy / Poppy / Shrimpo )",
+	Callback = function()
+      		workspace.Players.test.Hair.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Cap ( Astro / Gigi )",
+	Callback = function()
+      		workspace.Players.test.Cap.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Light ( Brightney )",
+	Callback = function()
+      		workspace.Players.test.Body.Light.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Head ( All Toons / Astro / Brightney / Rodger )",
+	Callback = function()
+      		workspace.Players.test.Head.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Body ( All Toons )",
+	Callback = function()
+      		workspace.Players.test.Body.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Antennae Left ( Flutter )",
+	Callback = function()
+      		workspace.Players.test.AntL.Transparency=1
+          workspace.Players.test.AntL["Meshes/Flutter_007"].Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Antennae Right ( Flutter )",
+	Callback = function()
+      		workspace.Players.test.AntR.Transparency=1
+          workspace.Players.test.AntR["Meshes/Flutter_009"].Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Wing Left ( Flutter)",
+	Callback = function()
+      		workspace.Players.test.WingL.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Wing Right ( Flutter)",
+	Callback = function()
+      		workspace.Players.test.WingR.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Scarf ( Flutter )",
+	Callback = function()
+      		workspace.Players.test.Body["Meshes/Flutter_005"].Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Bow ( Glisten )",
+	Callback = function()
+      		workspace.Players.test.Bow.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Arm Left ( Goob )",
+	Callback = function()
+      		workspace.Players.test.ArmL.Transparency=1
+          workspace.Players.test.HandLL.Transparency=1
+          workspace.Players.test.HandLM.Transparency=1
+          workspace.Players.test.HandLR.Transparency=1
+          workspace.Players.test.ThumbL.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Arm Right ( Goob )",
+	Callback = function()
+      		workspace.Players.test.ArmR.Transparency=1
+          workspace.Players.test.HandRL.Transparency=1
+          workspace.Players.test.HandRM.Transparency=1
+          workspace.Players.test.HandRR.Transparency=1
+          workspace.Players.test.ThumbR.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Rope Left ( Goob )",
+	Callback = function()
+      		workspace.Players.test.Body.RopeConstraint.Visible=False
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Rope Right ( Goob )",
+	Callback = function()
+      		workspace.Players.test.Body:GetChildren()[4].Visible=False
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Eye Left ( Pebble )",
+	Callback = function()
+      		workspace.Players.test.EyeL.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Eye Right ( Pebble )",
+	Callback = function()
+      		workspace.Players.test.EyeR.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Tail ( Pebble / Scraps )",
+	Callback = function()
+      		workspace.Players.test.Tail.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Head Left ( Razzle & Razzle )",
+	Callback = function()
+      		workspace.Players.test.HeadL.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Head Right ( Razzle & Razzle )",
+	Callback = function()
+      		workspace.Players.test.HeadR.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Neck Left ( Razzle & Dazzle )",
+	Callback = function()
+      		workspace.Players.test.NeckL.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Neck Right ( Razzle & Dazzle )",
+	Callback = function()
+      		workspace.Players.test.NeckR.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Glass ( Rodger )",
+	Callback = function()
+      		workspace.Players.test.Head.Glass.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Ear Left ( Scraps )",
+	Callback = function()
+      		workspace.Players.test.EarL.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Ear Right ( Scraps )",
+	Callback = function()
+      		workspace.Players.test.EarR.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Scarf ( Sprout )",
+	Callback = function()
+      		workspace.Players.test.Scarf.Transparency=1
+          workspace.Players.test.Body.SC.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Boa ( Teagan )",
+	Callback = function()
+      		workspace.Players.test.Boa.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Hat ( Tisha )",
+	Callback = function()
+      		workspace.Players.test.Hat.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Microphone ( Vee )",
+	Callback = function()
+      		workspace.Players.test.Mic.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "No Rope ( Vee )",
+	Callback = function()
+      		workspace.Players.test.MicTail.RopeConstraint.Visible=False
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "Twisteds Script",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Client-Side Script"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+OrionLib:MakeNotification({
+	Name = "Welcome",
+	Content = "Notification content... what will it say??",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+--[[
+Title = <string> - The title of the notification.
+Content = <string> - The content of the notification.
+Image = <string> - The icon of the notification.
+Time = <number> - The duration of the notfication.
+]]
+
+Tab:AddButton({
+	Name = "No Hinge ( Twisted Boxten )",
+	Callback = function()
+      		workspace.Players.test.Hinge.Transparency=1
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "Fake Trinkets Script",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Trinket Slot 1"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+OrionLib:MakeNotification({
+	Name = "Welcome",
+	Content = "Notification content... what will it say??",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+--[[
+Title = <string> - The title of the notification.
+Content = <string> - The content of the notification.
+Image = <string> - The icon of the notification.
+Time = <number> - The duration of the notfication.
+]]
+
+Tab:AddButton({
+	Name = "NightCap",
+	Callback = function()
+      		game:GetService("Players").LocalPlayer.PlayerGui.MainGui.Slot1.ItemImage.Image = "rbxassetid://17652059169"
+workspace.Players.test.LoadoutFrame.Frame.Slot1.ItemImage.Image = "rbxassetid://17652059169"
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Trinket Slot 2"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+OrionLib:MakeNotification({
+	Name = "Welcome",
+	Content = "Notification content... what will it say??",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+--[[
+Title = <string> - The title of the notification.
+Content = <string> - The content of the notification.
+Image = <string> - The icon of the notification.
+Time = <number> - The duration of the notfication.
+]]
+
+Tab:AddButton({
+	Name = "Nightcap",
+	Callback = function()
+      		game:GetService("Players").LocalPlayer.PlayerGui.MainGui.Slot2.ItemImage.Image = "rbxassetid://17652059169"
+workspace.Players.test.LoadoutFrame.Frame.Slot2.ItemImage.Image = "rbxassetid://17652059169"
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
